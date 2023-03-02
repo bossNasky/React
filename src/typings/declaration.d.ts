@@ -1,2 +1,2 @@
 declare module "*.module.css";
-declare module "*.(jpg|png)";
+declare module "*.jpg";
