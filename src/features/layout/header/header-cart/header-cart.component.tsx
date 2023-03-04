@@ -1,9 +1,13 @@
 import { HeaderIcon } from "../header-icon/header-icon.component";
 import style from "./header-cart.module.css";
 
-const HeaderCart = function () {
+type HeaderCartProps = {
+  openModal: () => void;
+};
+
+const HeaderCart = function ({ openModal }: HeaderCartProps) {
   return (
-    <button className={style["button"]}>
+    <button className={style["button"]} onClick={openModal}>
       <span className={style["icon"]}>
         <HeaderIcon />
       </span>
